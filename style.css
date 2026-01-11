@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.devider {
+  height: 5px;
+  background-color: #cccccc;
+  margin: 17px 0;
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+  position: relative;
+}
+
+.aside {
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+}
+.aside img {
+  width: 45%;
+  border-radius: 12px;
+  padding: 10px 0;
+}
+.aside > :nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+}
+.aside > :nth-child(3) {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.6;
+  text-transform: capitalize;
+}
+.aside .layer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+}
+.aside > :nth-child(4) {
+  color: #009688;
+}
+.aside > :nth-child(7) {
+  gap: unset;
+}
+
+.header > p {
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+.header > .manubar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header > .manubar > p {
+  padding-right: 15px;
+}
+.header > .manubar button {
+  font-size: 15px;
+  padding: 8px 16px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: none;
+  transition: all ease-in-out;
+}
+.header > .manubar button:nth-child(2) {
+  background-color: black;
+  color: #ffffff;
+}
+.header > .manubar button:nth-child(2):hover {
+  color: black;
+}
+.header > .manubar button:hover {
+  background-color: #cccccc;
+}
+
+.header > .manubar button span {
+  padding-right: 15px;
+}
+
+.main-cointant-body {
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: absolute;
+  left: 300px;
+}
+
+.card-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-items .cards {
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.card-items .cards:hover {
+  box-shadow: inset 0 0 20px 1px #00000061;
+  border-radius: 10px;
+}
+.card-items .cards img {
+  width: 100%;
+}
+
+.card-items .cards .description {
+  padding: 15px;
+}
+
+.card-items .cards .description p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.card-items .cards .description p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.page-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  gap: 10px;
+  padding: 30px;
+}
+.page-number :nth-child(2) {
+  background-color: black;
+  color: white;
+}
+.page-number .page {
+  padding: 10px 15px;
+}
+.page-number .page:hover {
+  background: #000;
+  color: white;
+}
+.page-number :nth-child(2):hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+.about-me .pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.about-me .pic img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.about-me .pic img:hover {
+  box-shadow: 0 0 20px 1px #000000e9;
+}
+
+.about-me .description {
+  padding: 30px 0;
+}
+
+.about-me .description p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.about-me .description p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.about-me .tech-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-me .tech-skill > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.about-me .tech-skill .skill-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-me .tech-skill .skill-box p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.about-me .tech-skill .skill-box .s-row {
+  width: 100%;
+  background-color: #9e9e9e;
+  border-radius: 20px;
+}
+.about-me .tech-skill .skill-box .s-row .s-inner-row {
+  width: 95%;
+  padding: 9px;
+  background-color: #616161;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 20px;
+}
+/* .about-me .tech-skill :nth-child(3) .s-row .s-inner-row{ */ /*both line are same*/
+.about-me .tech-skill .skill-box:nth-child(3) .s-row .s-inner-row {
+  width: 85%;
+}
+.about-me .tech-skill :nth-child(4) .s-row .s-inner-row {
+  width: 80%;
+}
+
+.about-me .tech-skill .download {
+  margin-top: 10px;
+}
+
+.about-me .tech-skill .download button {
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #616161;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+.about-me .tech-skill .download button:hover {
+  background-color: #cccccc;
+  color: rgb(0, 0, 0);
+}
+.about-me .tech-skill .download button span {
+  padding-right: 10px;
+}
+
+.main-price-cointainer {
+  margin: 40px 0 30px 0;
+}
+
+.main-price-cointainer > p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.main-price-cointainer .price-cointainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main-price-cointainer .price-cointainer .price-box {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid #0000003b;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.6;
+}
+.main-price-cointainer .price-cointainer .price-box:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.326);
+  opacity: 1;
+}
+
+.main-price-cointainer .price-cointainer .price-box > :nth-child(1) {
+  background-color: #000000;
+  padding: 32px 16px;
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+}
+.main-price-cointainer .price-cointainer .price-box .aqua-bg {
+  background-color: #009688;
+}
+.main-price-cointainer .price-cointainer .price-box > p {
+  padding: 20px;
+  border-bottom: 2px solid #0000001f;
+}
+
+.main-price-cointainer .price-cointainer .price-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.main-price-cointainer .price-cointainer .price-box > div span {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.main-price-cointainer .price-cointainer .price-box .button {
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.main-price-cointainer .price-cointainer .price-box .button button {
+  padding: 12px 24px;
+  background-color: #60bab2;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.contact-me > p {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 0 20px 0;
+}
+
+.contact-me {
+  background-color: #9e9e9e;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.contact-me .box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.341);
+}
+
+.contact-me .box .inner-box {
+  text-align: center;
+  background-color: #616161;
+  padding: 15px 8px;
+  color: white;
+}
+
+.contact-me .box .inner-box i {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+/* .contact-me .box .inner-box:nth-child(2)--- same line */
+.contact-me .box > :nth-child(2) {
+  background-color: #009688;
+}
+
+.contact-me .form {
+  padding: 20px 0;
+}
+.contact-me .form .input-data {
+  padding-bottom: 25px;
+}
+.contact-me .form .input-data label,
+input {
+  display: block;
+}
+.contact-me .form .input-data label {
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+.contact-me .form .input-data input {
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+.form .btn button {
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #000000;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.form .btn button span {
+  padding-right: 10px;
+}
+
+.footer {
+  background: #616161;
+  padding: 50px 30px;
+  color: white;
+}
+
+.f-cointainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.f-cointainer .f-item > p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+.f-cointainer .one .box p {
+  font-size: 15px;
+  padding-bottom: 20px;
+  line-height: 23px;
+}
+
+.f-cointainer .two .f-item-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.f-cointainer .two .f-item-section .left img {
+  width: 50px;
+}
+.f-cointainer .two .f-item-section .right p {
+  padding-bottom: 6px;
+}
+
+.f-separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.255);
+}
+
+.f-cointainer .three .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.f-cointainer .three .tags span:nth-child(1) {
+  background: #000000;
+  color: #ffffff;
+}
+.f-cointainer .three .tags span {
+  padding: 3px 8px;
+  background: #9e9e9e;
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+
+.copyright{
+    padding: 30px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media screen and (max-width:900px) {
+    .card-items {
+        grid-template-columns: 1fr;
+    }
+    .main-price-cointainer .price-cointainer{
+        grid-template-columns: 1fr;
+    }
+    .f-cointainer  {
+        grid-template-columns: 1fr;
+    }
+    .about-me .pic{
+        grid-template-columns: 1fr;
+
+    }
+    
+}
+@media screen and (max-width:500px){
+    .contact-me .box{
+        grid-template-columns: 1fr;
+    }
+    .main-cointant-body {
+        left: 0;
+    }
+}
